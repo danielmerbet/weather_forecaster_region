@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_769804ff574305854a037e0ce805d498 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_769804ff574305854a037e0ce805d498" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_769804ff574305854a037e0ce805d498 = L.map(
+                "map_769804ff574305854a037e0ce805d498",
+                {
+                    center: [40.0, -3.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_66a45829c9ff48b152837c4882182933 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_66a45829c9ff48b152837c4882182933.addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+            var marker_879380e9077871196bcf35687cbef279 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+        var popup_b405fa130ffaf41f78ffa815622a8720 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_237e656b6f440f42505e008f73a615f0 = $(`<div id="html_237e656b6f440f42505e008f73a615f0" style="width: 100.0%; height: 100.0%;"><a href='forecast_plots/Madrid_forecast.html' target='_blank'>View Forecast for Madrid</a></div>`)[0];
+                popup_b405fa130ffaf41f78ffa815622a8720.setContent(html_237e656b6f440f42505e008f73a615f0);
+            
+        
+
+        marker_879380e9077871196bcf35687cbef279.bindPopup(popup_b405fa130ffaf41f78ffa815622a8720)
+        ;
+
+        
+    
+    
+            marker_879380e9077871196bcf35687cbef279.bindTooltip(
+                `<div>
+                     Madrid
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e0e6ca4bdfb1442fdec351998869a284 = L.marker(
+                [41.3879, 2.16992],
+                {
+}
+            ).addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+        var popup_700f1cd571ab6f0cd0889ddcb7c67936 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e04f141479d5028e6b79b34e9ffa6e0b = $(`<div id="html_e04f141479d5028e6b79b34e9ffa6e0b" style="width: 100.0%; height: 100.0%;"><a href='forecast_plots/Barcelona_forecast.html' target='_blank'>View Forecast for Barcelona</a></div>`)[0];
+                popup_700f1cd571ab6f0cd0889ddcb7c67936.setContent(html_e04f141479d5028e6b79b34e9ffa6e0b);
+            
+        
+
+        marker_e0e6ca4bdfb1442fdec351998869a284.bindPopup(popup_700f1cd571ab6f0cd0889ddcb7c67936)
+        ;
+
+        
+    
+    
+            marker_e0e6ca4bdfb1442fdec351998869a284.bindTooltip(
+                `<div>
+                     Barcelona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8eec1ed9e9d4cca20f288aa6331f581 = L.marker(
+                [39.4699, -0.3763],
+                {
+}
+            ).addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+        var popup_b0c08f78567c32f9bb50d215faf96a32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c97574aa00016bbdeedac4a9679d19f3 = $(`<div id="html_c97574aa00016bbdeedac4a9679d19f3" style="width: 100.0%; height: 100.0%;"><a href='forecast_plots/Valencia_forecast.html' target='_blank'>View Forecast for Valencia</a></div>`)[0];
+                popup_b0c08f78567c32f9bb50d215faf96a32.setContent(html_c97574aa00016bbdeedac4a9679d19f3);
+            
+        
+
+        marker_e8eec1ed9e9d4cca20f288aa6331f581.bindPopup(popup_b0c08f78567c32f9bb50d215faf96a32)
+        ;
+
+        
+    
+    
+            marker_e8eec1ed9e9d4cca20f288aa6331f581.bindTooltip(
+                `<div>
+                     Valencia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b675405527d01f8fa9c529c20feba7f7 = L.marker(
+                [37.3891, -5.9845],
+                {
+}
+            ).addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+        var popup_f68479ae82ac50167b771b84b4df8330 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85775a1ba8b25072b0f00efffde5a6c5 = $(`<div id="html_85775a1ba8b25072b0f00efffde5a6c5" style="width: 100.0%; height: 100.0%;"><a href='forecast_plots/Seville_forecast.html' target='_blank'>View Forecast for Seville</a></div>`)[0];
+                popup_f68479ae82ac50167b771b84b4df8330.setContent(html_85775a1ba8b25072b0f00efffde5a6c5);
+            
+        
+
+        marker_b675405527d01f8fa9c529c20feba7f7.bindPopup(popup_f68479ae82ac50167b771b84b4df8330)
+        ;
+
+        
+    
+    
+            marker_b675405527d01f8fa9c529c20feba7f7.bindTooltip(
+                `<div>
+                     Seville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23f204c15d2d91438e6cc775d83e3073 = L.marker(
+                [43.263, -2.935],
+                {
+}
+            ).addTo(map_769804ff574305854a037e0ce805d498);
+        
+    
+        var popup_c09eb95a2aa0036b34a37d897f1cb107 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31f41b5cef26db31b05c4899e0d912d1 = $(`<div id="html_31f41b5cef26db31b05c4899e0d912d1" style="width: 100.0%; height: 100.0%;"><a href='forecast_plots/Bilbao_forecast.html' target='_blank'>View Forecast for Bilbao</a></div>`)[0];
+                popup_c09eb95a2aa0036b34a37d897f1cb107.setContent(html_31f41b5cef26db31b05c4899e0d912d1);
+            
+        
+
+        marker_23f204c15d2d91438e6cc775d83e3073.bindPopup(popup_c09eb95a2aa0036b34a37d897f1cb107)
+        ;
+
+        
+    
+    
+            marker_23f204c15d2d91438e6cc775d83e3073.bindTooltip(
+                `<div>
+                     Bilbao
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
