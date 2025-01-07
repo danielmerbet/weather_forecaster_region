@@ -1,10 +1,9 @@
 # This workflow will install Python dependencies, run tests, and push changes to the repository
-name: fdom and weather forecaster
+name: weather forecaster region
 
 on:
   schedule:
     - cron: '58 */6 * * *'  # Runs every hour at the first minute
-    #- cron: '*/5 * * * *'
 
 jobs:
   build:
